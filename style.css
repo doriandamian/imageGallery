@@ -47,6 +47,18 @@ body {
   padding: 70px;
 }
 
+@media screen and (max-width: 1000px) {
+  .contents {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contents {
+    grid-template-columns: 1fr;
+  }
+}
+
 .card {
   border: 2px solid #d9d9d9;
   border-radius: 10px;
