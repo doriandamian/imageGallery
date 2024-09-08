@@ -27,7 +27,7 @@ async function populateCards() {
   contentsDiv.innerHTML = "";
   const filtered = api.filter((item) => item.author === selectElement.value);
   const fragment = document.createDocumentFragment(); // .gaia says it is faster using document fragment
-  for(const item of filtered) {
+  for (const item of filtered) {
     const card = document.createElement("div");
     card.classList.add("card");
 
@@ -45,7 +45,7 @@ async function populateCards() {
     card.appendChild(description);
 
     fragment.appendChild(card);
-  };
+  }
   contentsDiv.appendChild(fragment);
 }
 

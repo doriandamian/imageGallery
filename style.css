@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 * {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  margin-top: 5vh;
+  margin: 5vh auto 0 auto;
   width: 70%;
   height: auto;
   display: flex;
@@ -48,14 +48,24 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  .container {
+    width: 85%;
+  }
+
   .contents {
     grid-template-columns: repeat(2, 1fr);
+    padding: 55px;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+
   .contents {
     grid-template-columns: 1fr;
+    padding: 40px;
   }
 }
 
